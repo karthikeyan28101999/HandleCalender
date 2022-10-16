@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [sanity]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="calender(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="seleniumproject.HandleCalender">
+        <methods>
+          <include name="handleCalender"/>
+          <include name="quuit"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- seleniumproject.HandleCalender -->
+    </classes>
+  </test> <!-- calender(failed) -->
+</suite> <!-- Failed suite [sanity] -->
