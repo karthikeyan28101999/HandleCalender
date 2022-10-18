@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-16T03:14:27Z" name="Suite" finished-at="2022-10-16T03:15:06Z" duration-ms="39235">
+  <suite started-at="2022-10-17T09:34:11Z" name="Suite" finished-at="2022-10-17T09:34:42Z" duration-ms="31512">
     <groups>
     </groups>
-    <test started-at="2022-10-16T03:14:27Z" name="calender" finished-at="2022-10-16T03:15:06Z" duration-ms="39235">
+    <test started-at="2022-10-17T09:34:11Z" name="calender" finished-at="2022-10-17T09:34:42Z" duration-ms="31512">
       <class name="seleniumproject.HandleCalender">
-        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:seleniumproject.HandleCalender@146dfe6]" started-at="2022-10-16T03:14:27Z" name="initialize" finished-at="2022-10-16T03:14:41Z" duration-ms="14417" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:seleniumproject.HandleCalender@7d3e8655]" started-at="2022-10-17T09:34:11Z" name="initialize" finished-at="2022-10-17T09:34:20Z" duration-ms="9718" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="handleCalender()[pri:0, instance:seleniumproject.HandleCalender@146dfe6]" started-at="2022-10-16T03:14:41Z" name="handleCalender" finished-at="2022-10-16T03:15:03Z" duration-ms="21956" status="PASS">
+        <test-method signature="handleCalender()[pri:0, instance:seleniumproject.HandleCalender@7d3e8655]" started-at="2022-10-17T09:34:20Z" name="handleCalender" finished-at="2022-10-17T09:34:40Z" duration-ms="19367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleCalender -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:seleniumproject.HandleCalender@146dfe6]" started-at="2022-10-16T03:15:03Z" name="quit" finished-at="2022-10-16T03:15:06Z" duration-ms="2809" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:seleniumproject.HandleCalender@7d3e8655]" started-at="2022-10-17T09:34:40Z" name="quit" finished-at="2022-10-17T09:34:42Z" duration-ms="2382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

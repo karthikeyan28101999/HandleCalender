@@ -1,94 +1,281 @@
-[DEBUG] 2022-10-16 08:44:32.985 [main] HandleCalender - initialize the chrome browser
-[DEBUG] 2022-10-16 08:44:33.466 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2022-10-16 08:44:33.483 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2022-10-16 08:44:33.483 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2022-10-16 08:44:33.497 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@19382338
-[DEBUG] 2022-10-16 08:44:33.552 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2022-10-16 08:44:33.553 [main] PlatformDependent0 - Java version: 17
-[DEBUG] 2022-10-16 08:44:33.556 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2022-10-16 08:44:33.559 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2022-10-16 08:44:33.560 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2022-10-16 08:44:33.562 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2022-10-16 08:44:33.564 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2022-10-16 08:44:33.565 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2022-10-16 08:44:33.569 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1e127982
-[DEBUG] 2022-10-16 08:44:33.574 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2022-10-16 08:44:33.575 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2022-10-16 08:44:33.576 [main] PlatformDependent - maxDirectMemory: 1031798784 bytes (maybe)
-[DEBUG] 2022-10-16 08:44:33.577 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\KARTHI~1\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2022-10-16 08:44:33.578 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2022-10-16 08:44:33.579 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2022-10-16 08:44:33.581 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2022-10-16 08:44:33.581 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2022-10-16 08:44:33.585 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2022-10-16 08:44:33.585 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2022-10-16 08:44:33.612 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2022-10-16 08:44:33.681 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2022-10-16 08:44:33.682 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2022-10-16 08:44:33.726 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2022-10-16 08:44:33.727 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2022-10-16 08:44:33.819 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 4
-[DEBUG] 2022-10-16 08:44:33.848 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2022-10-16 08:44:33.849 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2022-10-16 08:44:34.015 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 4
-[DEBUG] 2022-10-16 08:44:34.015 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 4
-[DEBUG] 2022-10-16 08:44:34.016 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2022-10-16 08:44:34.016 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2022-10-16 08:44:34.016 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2022-10-16 08:44:34.017 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2022-10-16 08:44:34.017 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2022-10-16 08:44:34.017 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2022-10-16 08:44:34.017 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2022-10-16 08:44:34.018 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2022-10-16 08:44:34.018 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2022-10-16 08:44:34.018 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2022-10-16 08:44:34.050 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2022-10-16 08:44:34.051 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2022-10-16 08:44:34.051 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2022-10-16 08:44:37.075 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 4728 (auto-detected)
-[DEBUG] 2022-10-16 08:44:37.081 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2022-10-16 08:44:37.082 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2022-10-16 08:44:37.118 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-[DEBUG] 2022-10-16 08:44:37.153 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2022-10-16 08:44:37.362 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f8:a2:d6:ff:fe:fe:c6:63 (auto-detected)
-[DEBUG] 2022-10-16 08:44:37.596 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2022-10-16 08:44:37.597 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2022-10-16 08:44:37.598 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@629278e4
-[DEBUG] 2022-10-16 08:44:37.677 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2022-10-16 08:44:37.678 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2022-10-16 08:44:37.678 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2022-10-16 08:44:37.678 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2022-10-16 08:44:40.893 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2022-10-16 08:44:41.734 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x59703423206f5992
-[DEBUG] 2022-10-16 08:44:53.082 [main] HandleCalender - landing in application url
-[DEBUG] 2022-10-16 08:44:53.163 [main] HandleCalender - click the calender button
-[DEBUG] 2022-10-16 08:44:54.304 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:54.609 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:55.088 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:55.231 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:55.759 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:55.934 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:56.400 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:56.560 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:57.112 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:57.258 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:57.728 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:57.881 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:58.338 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:58.500 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:58.981 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:59.117 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:44:59.592 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:44:59.721 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:45:00.207 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:45:00.356 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:45:00.917 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:45:01.059 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:45:01.534 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:45:01.696 [main] HandleCalender - click the next month button
-[DEBUG] 2022-10-16 08:45:02.165 [main] HandleCalender - get current month and year
-[DEBUG] 2022-10-16 08:45:02.258 [main] HandleCalender - get all the date from the calender
-[INFO ] 2022-10-16 08:45:03.359 [main] HandleCalender - click the given date
-[INFO ] 2022-10-16 08:45:03.888 [main] HandleCalender - check actual and expect value eithe equal or not
-[INFO ] 2022-10-16 08:45:03.891 [main] HandleCalender - both are equal
-[DEBUG] 2022-10-16 08:45:06.709 [main] HandleCalender - quit the browser
+[DEBUG] 2022-10-17 15:04:14.562 [main] HandleCalender - initialize the chrome browser
+[DEBUG] 2022-10-17 15:04:15.013 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2022-10-17 15:04:15.028 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2022-10-17 15:04:15.028 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2022-10-17 15:04:15.036 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@528f8f8b
+[DEBUG] 2022-10-17 15:04:15.102 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2022-10-17 15:04:15.103 [main] PlatformDependent0 - Java version: 17
+[DEBUG] 2022-10-17 15:04:15.105 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2022-10-17 15:04:15.107 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2022-10-17 15:04:15.109 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2022-10-17 15:04:15.110 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2022-10-17 15:04:15.112 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2022-10-17 15:04:15.114 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2022-10-17 15:04:15.117 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @3339ad8e
+[DEBUG] 2022-10-17 15:04:15.119 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG] 2022-10-17 15:04:15.119 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2022-10-17 15:04:15.121 [main] PlatformDependent - maxDirectMemory: 1031798784 bytes (maybe)
+[DEBUG] 2022-10-17 15:04:15.121 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\KARTHI~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 2022-10-17 15:04:15.121 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2022-10-17 15:04:15.122 [main] PlatformDependent - Platform: Windows
+[DEBUG] 2022-10-17 15:04:15.124 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2022-10-17 15:04:15.125 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2022-10-17 15:04:15.128 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2022-10-17 15:04:15.128 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2022-10-17 15:04:15.147 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2022-10-17 15:04:15.197 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2022-10-17 15:04:15.197 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2022-10-17 15:04:15.231 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2022-10-17 15:04:15.231 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2022-10-17 15:04:15.318 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 4
+[DEBUG] 2022-10-17 15:04:15.341 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2022-10-17 15:04:15.342 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2022-10-17 15:04:15.436 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 4
+[DEBUG] 2022-10-17 15:04:15.437 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 4
+[DEBUG] 2022-10-17 15:04:15.437 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2022-10-17 15:04:15.437 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2022-10-17 15:04:15.438 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2022-10-17 15:04:15.438 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2022-10-17 15:04:15.438 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2022-10-17 15:04:15.438 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2022-10-17 15:04:15.438 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2022-10-17 15:04:15.438 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2022-10-17 15:04:15.439 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2022-10-17 15:04:15.441 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2022-10-17 15:04:15.466 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2022-10-17 15:04:15.466 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2022-10-17 15:04:15.466 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2022-10-17 15:04:16.452 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 4112 (auto-detected)
+[DEBUG] 2022-10-17 15:04:16.457 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2022-10-17 15:04:16.458 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2022-10-17 15:04:16.549 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 2022-10-17 15:04:16.552 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 2022-10-17 15:04:16.863 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f8:a2:d6:ff:fe:fe:c6:63 (auto-detected)
+[DEBUG] 2022-10-17 15:04:17.051 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2022-10-17 15:04:17.052 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2022-10-17 15:04:17.052 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1edc69
+[DEBUG] 2022-10-17 15:04:17.108 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2022-10-17 15:04:17.109 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2022-10-17 15:04:17.109 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2022-10-17 15:04:17.110 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2022-10-17 15:04:19.711 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[DEBUG] 2022-10-17 15:04:20.538 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x888fd9b82f03df01
+[DEBUG] 2022-10-17 15:04:28.793 [main] HandleCalender - landing in application url
+[DEBUG] 2022-10-17 15:04:28.847 [main] HandleCalender - click the calender button
+[DEBUG] 2022-10-17 15:04:30.147 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:30.497 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:30.974 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:31.111 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:31.567 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:31.680 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:32.135 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:32.271 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:32.730 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:32.935 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:33.395 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:33.534 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:34.052 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:34.267 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:34.774 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:34.875 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:35.337 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:35.441 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:35.901 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:36.058 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:36.515 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:36.632 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:37.098 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:37.200 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:04:37.752 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:04:37.928 [main] HandleCalender - get all the date from the calender
+[INFO ] 2022-10-17 15:04:39.775 [main] HandleCalender - click the given date
+[INFO ] 2022-10-17 15:04:40.318 [main] HandleCalender - check actual and expect value eithe equal or not
+[INFO ] 2022-10-17 15:04:40.321 [main] HandleCalender - both are equal
+[DEBUG] 2022-10-17 15:04:42.711 [main] HandleCalender - quit the browser
+[DEBUG] 2022-10-17 15:58:39.558 [main] HandleCalender - initialize the chrome browser
+[DEBUG] 2022-10-17 15:58:40.012 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2022-10-17 15:58:40.029 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2022-10-17 15:58:40.030 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2022-10-17 15:58:40.039 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6eb82908
+[DEBUG] 2022-10-17 15:58:40.094 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2022-10-17 15:58:40.095 [main] PlatformDependent0 - Java version: 17
+[DEBUG] 2022-10-17 15:58:40.099 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2022-10-17 15:58:40.101 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2022-10-17 15:58:40.102 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2022-10-17 15:58:40.104 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2022-10-17 15:58:40.106 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2022-10-17 15:58:40.108 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2022-10-17 15:58:40.112 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @15043a2f
+[DEBUG] 2022-10-17 15:58:40.114 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG] 2022-10-17 15:58:40.115 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2022-10-17 15:58:40.116 [main] PlatformDependent - maxDirectMemory: 1031798784 bytes (maybe)
+[DEBUG] 2022-10-17 15:58:40.117 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\KARTHI~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 2022-10-17 15:58:40.117 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2022-10-17 15:58:40.118 [main] PlatformDependent - Platform: Windows
+[DEBUG] 2022-10-17 15:58:40.120 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2022-10-17 15:58:40.121 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2022-10-17 15:58:40.124 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2022-10-17 15:58:40.124 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2022-10-17 15:58:40.145 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2022-10-17 15:58:40.205 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2022-10-17 15:58:40.205 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2022-10-17 15:58:40.244 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2022-10-17 15:58:40.245 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2022-10-17 15:58:40.330 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 4
+[DEBUG] 2022-10-17 15:58:40.362 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2022-10-17 15:58:40.363 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2022-10-17 15:58:40.475 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 4
+[DEBUG] 2022-10-17 15:58:40.475 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 4
+[DEBUG] 2022-10-17 15:58:40.475 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2022-10-17 15:58:40.476 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2022-10-17 15:58:40.476 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2022-10-17 15:58:40.476 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2022-10-17 15:58:40.477 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2022-10-17 15:58:40.477 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2022-10-17 15:58:40.477 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2022-10-17 15:58:40.477 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2022-10-17 15:58:40.478 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2022-10-17 15:58:40.478 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2022-10-17 15:58:40.509 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2022-10-17 15:58:40.510 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2022-10-17 15:58:40.511 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2022-10-17 15:58:44.754 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 7644 (auto-detected)
+[DEBUG] 2022-10-17 15:58:44.762 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2022-10-17 15:58:44.762 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2022-10-17 15:58:44.795 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 2022-10-17 15:58:44.798 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 2022-10-17 15:58:45.379 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f8:a2:d6:ff:fe:fe:c6:63 (auto-detected)
+[DEBUG] 2022-10-17 15:58:45.664 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2022-10-17 15:58:45.665 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2022-10-17 15:58:45.665 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@72291803
+[DEBUG] 2022-10-17 15:58:45.736 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2022-10-17 15:58:45.737 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2022-10-17 15:58:45.737 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2022-10-17 15:58:45.737 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2022-10-17 15:58:50.721 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[DEBUG] 2022-10-17 15:58:51.523 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x7e2e282188ac3853
+[DEBUG] 2022-10-17 15:59:00.866 [main] HandleCalender - landing in application url
+[DEBUG] 2022-10-17 15:59:01.113 [main] HandleCalender - click the calender button
+[DEBUG] 2022-10-17 15:59:02.214 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:02.451 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:02.959 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:03.216 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:03.689 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:03.836 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:04.314 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:04.440 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:04.925 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:05.066 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:05.528 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:05.702 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:06.173 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:06.568 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:07.042 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:07.173 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:07.640 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:07.771 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:08.245 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:08.404 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:08.880 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:09.015 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:09.540 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:09.685 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 15:59:10.156 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 15:59:10.252 [main] HandleCalender - get all the date from the calender
+[INFO ] 2022-10-17 15:59:11.407 [main] HandleCalender - click the given date
+[INFO ] 2022-10-17 15:59:11.935 [main] HandleCalender - check actual and expect value eithe equal or not
+[INFO ] 2022-10-17 15:59:11.938 [main] HandleCalender - both are equal
+[DEBUG] 2022-10-17 15:59:15.337 [main] HandleCalender - quit the browser
+[DEBUG] 2022-10-17 16:04:50.370 [main] HandleCalender - initialize the firefox browser
+[DEBUG] 2022-10-17 16:04:50.729 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2022-10-17 16:04:50.745 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2022-10-17 16:04:50.745 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2022-10-17 16:04:50.745 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@6dd82486
+[DEBUG] 2022-10-17 16:04:50.792 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2022-10-17 16:04:50.792 [main] PlatformDependent0 - Java version: 17
+[DEBUG] 2022-10-17 16:04:50.792 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2022-10-17 16:04:50.792 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2022-10-17 16:04:50.792 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2022-10-17 16:04:50.792 [main] PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1349883
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent - maxDirectMemory: 1031798784 bytes (maybe)
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\KARTHI~1\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2022-10-17 16:04:50.807 [main] PlatformDependent - Platform: Windows
+[DEBUG] 2022-10-17 16:04:50.823 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2022-10-17 16:04:50.823 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2022-10-17 16:04:50.823 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2022-10-17 16:04:50.823 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2022-10-17 16:04:50.839 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2022-10-17 16:04:50.885 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2022-10-17 16:04:50.885 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2022-10-17 16:04:50.917 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2022-10-17 16:04:50.917 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2022-10-17 16:04:50.995 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 4
+[DEBUG] 2022-10-17 16:04:51.010 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2022-10-17 16:04:51.010 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 4
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 4
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2022-10-17 16:04:51.104 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2022-10-17 16:04:51.135 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2022-10-17 16:04:51.135 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2022-10-17 16:04:51.135 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2022-10-17 16:04:53.142 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 4564 (auto-detected)
+[DEBUG] 2022-10-17 16:04:53.157 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2022-10-17 16:04:53.157 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2022-10-17 16:04:53.173 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 2022-10-17 16:04:53.173 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 2022-10-17 16:04:53.257 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: f8:a2:d6:ff:fe:fe:c6:63 (auto-detected)
+[DEBUG] 2022-10-17 16:04:53.366 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2022-10-17 16:04:53.366 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2022-10-17 16:04:53.366 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7ce65ed2
+[DEBUG] 2022-10-17 16:04:53.444 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2022-10-17 16:04:53.444 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2022-10-17 16:04:53.444 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2022-10-17 16:04:53.444 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2022-10-17 16:05:02.926 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[DEBUG] 2022-10-17 16:05:13.195 [main] HandleCalender - landing in application url
+[DEBUG] 2022-10-17 16:05:13.450 [main] HandleCalender - click the calender button
+[DEBUG] 2022-10-17 16:05:14.546 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:14.951 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:15.443 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:15.746 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:16.204 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:16.516 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:16.970 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:17.286 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:17.737 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:18.056 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:18.511 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:18.834 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:19.257 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:19.574 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:20.021 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:20.307 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:20.759 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:21.076 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:21.531 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:21.824 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:22.262 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:22.578 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:23.018 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:23.311 [main] HandleCalender - click the next month button
+[DEBUG] 2022-10-17 16:05:23.763 [main] HandleCalender - get current month and year
+[DEBUG] 2022-10-17 16:05:23.836 [main] HandleCalender - get all the date from the calender
+[INFO ] 2022-10-17 16:05:24.943 [main] HandleCalender - click the given date
+[INFO ] 2022-10-17 16:05:25.465 [main] HandleCalender - check actual and expect value eithe equal or not
+[INFO ] 2022-10-17 16:05:25.465 [main] HandleCalender - both are equal
+[DEBUG] 2022-10-17 16:05:28.954 [main] HandleCalender - quit the browser
