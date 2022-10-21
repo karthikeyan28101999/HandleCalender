@@ -1,5 +1,7 @@
 package seleniumproject;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Calendar;
@@ -21,10 +23,17 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HandleCalender {
+	ExtentReports reports=new  ExtentReports();
+	ExtentSparkReporter report=new ExtentSparkReporter("./reports/report.html");
 	WebDriver driver;
+	static ExtentTest test;
 	static JavascriptExecutor js;
 	static Logger logger;
 	@Parameters("browser")
@@ -34,19 +43,19 @@ public class HandleCalender {
 		switch (browserName) {
 		case "chrome": {
 			WebDriverManager.chromedriver().setup();
-			logger.debug("initialize the chrome browser");
+			logger.info("initialize the chrome browser");
 			driver = new ChromeDriver();
 			break;
 		}
 		case "firefox": {
 			WebDriverManager.firefoxdriver().setup();
-			logger.debug("initialize the firefox browser");
+			logger.info("initialize the firefox browser");
 			driver = new FirefoxDriver();
 			break;
 		}
 		case "edge": {
 			WebDriverManager.edgedriver().setup();
-			logger.debug("initialize the edge browser");
+			logger.info("initialize the edge browser");
 			driver = new EdgeDriver();
 			break;
 		}
@@ -54,25 +63,30 @@ public class HandleCalender {
 			System.out.println("browser name mismatch");
 			logger.error("browser name mismatch");
 		}
+		reports.attachReporter(report);
+		test = reports.createTest("Test Calender");
 	}
 
 	@AfterTest
 	public void quit() throws Exception {
 		Thread.sleep(1000);
 		driver.quit();
-		logger.debug("quit the browser");
+		logger.info("quit the browser");
+		reports.flush();
+		Desktop.getDesktop().browse(new File("./reports/report.html").toURI());
+		
 	}
 
 	@Test
 	public void handleCalender() throws Exception {
 		driver.manage().window().maximize();
 		driver.get("https://www.path2usa.com/travel-companions");
-		logger.debug("landing in application url");
+		logger.info("landing in application url");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
 		WebElement calenderBtn = driver.findElement(By.id("form-field-travel_comp_date"));
 		js = (JavascriptExecutor) driver;
 		js.executeScript("document.getElementById('form-field-travel_comp_date').scrollIntoView()");
-		logger.debug("click the calender button");
+		logger.info("click the calender button");
 		Thread.sleep(300);
 		calenderBtn.click();
 		String actualDate = getCurentMonthAndYear(driver);
@@ -86,7 +100,7 @@ public class HandleCalender {
 	public static String getCurentMonthAndYear(WebDriver driver) {
 		WebElement currentmonth = driver.findElement(By.cssSelector(".flatpickr-month .flatpickr-current-month"));
 		String actualMonth = currentmonth.getText();
-		logger.debug("get current month and year");
+		logger.info("get current month and year");
 		WebElement currentYear = driver.findElement(By.cssSelector(".cur-year"));
 		js = (JavascriptExecutor) driver;
 		String actualYear = (String) js.executeScript("return arguments[0].value", currentYear);
@@ -109,7 +123,7 @@ public class HandleCalender {
 
 		while (targetMonth > actualMonth || targetYear > actualYear) {
 			driver.findElement(By.className("flatpickr-next-month")).click();
-			logger.debug("click the next month button");
+			logger.info("click the next month button");
 			Thread.sleep(400);
 			actualDate = getCurentMonthAndYear(driver);
 			calendar.setTime(new SimpleDateFormat("MMM yyyy").parse(actualDate));
@@ -131,8 +145,15 @@ public class HandleCalender {
 	}
 	public static void validate (String actual ,String expect)
 	{
-		  logger.info("check actual and expect value eithe equal or not");
-	      Assert.assertEquals(actual, expect);	
-	      logger.info("both are equal");
+		try {
+			logger.info("check actual and expect value eithe equal or not");
+			Assert.assertEquals(actual, expect);
+			test.pass("sucessesfully date  is selected");
+			logger.info("both are equal");
+		}
+		catch(Throwable th){
+			test.fail(th);
+			th.printStackTrace();
+		}
 	}
 }
